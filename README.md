@@ -55,5 +55,5 @@ If you have suggestions for new features or have found a bug, please write a new
 If you would like to contribute to the list of issues, please create a new pull request.
 
 ## License
-AGPLv3 © [Waseem G](https://www.waseem-g.com/)
+[GNU AGPLv3](https://choosealicense.com/licenses/agpl-3.0/) © [Waseem G](https://www.waseem-g.com/)
 
