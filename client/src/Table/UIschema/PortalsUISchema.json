@@ -1,0 +1,45 @@
+{
+    "type": "VerticalLayout",
+    "elements": [
+        {
+            "type": "Group",
+            "label": "Portals",
+            "elements": [
+                {
+                    "type": "Control",
+                    "scope": "#/properties/portals",
+                    "options": {
+                        "elementLabelProp": "targetMap",
+                        "detail": {
+                            "type": "VerticalLayout",
+                            "elements": [
+                                {
+                                    "type": "HorizontalLayout",
+                                    "elements": [
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/x"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/y"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "HorizontalLayout",
+                                    "elements": [
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/targetMapOrUrl"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

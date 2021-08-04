@@ -1,0 +1,44 @@
+{
+    "type": "VerticalLayout",
+    "elements": [
+        {
+            "type": "Group",
+            "label": "Private Area",
+            "elements": [
+                {
+                    "type": "Control",
+                    "scope": "#/properties/spaces",
+                    "options": {
+                        "elementLabelProp": "spaceId",
+                        "detail": {
+                            "type": "VerticalLayout",
+                            "elements": [
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/spaceId"
+                                },
+                                {
+                                    "type": "HorizontalLayout",
+                                    "elements": [
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/x"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/y"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/colored"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

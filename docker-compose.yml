@@ -1,0 +1,26 @@
+version: '3.4'
+services:
+  client:
+    container_name: gather_town_client
+    stdin_open: true
+    build: ./client
+    depends_on:
+      - server
+    volumes:
+      - ./client:/app/client
+      - /app/client/node_modules
+    ports:
+      - 3000:3000
+    environment:
+      CHOKIDAR_USEPOLLING: 'true'
+  server:
+    container_name: gather_town_api
+    stdin_open: true
+    build: ./server
+    volumes:
+      - ./server:/app/server/
+      - /app/server/node_modules
+    ports:
+      - 5000:5000
+    environment:
+      CHOKIDAR_USEPOLLING: 'true'

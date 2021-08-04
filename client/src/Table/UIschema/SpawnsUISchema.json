@@ -1,0 +1,34 @@
+{
+    "type": "VerticalLayout",
+    "elements": [
+        {
+            "type": "Group",
+            "label": "Spawns",
+            "elements": [
+                {
+                    "type": "Control",
+                    "scope": "#/properties/spawns",
+                    "options": {
+                        "elementLabelProp": [
+                            "x",
+                            "y"
+                        ],
+                        "detail": {
+                            "type": "HorizontalLayout",
+                            "elements": [
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/x"
+                                },
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/y"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

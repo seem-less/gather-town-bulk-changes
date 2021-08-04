@@ -1,0 +1,294 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "useDrawnBG": {
+            "type": "boolean"
+        },
+        "backgroundImagePath": {
+            "type": "string"
+        },
+        "foregroundImagePath": {
+            "type": "string"
+        },
+        "collisions": {
+            "type": "string"
+        },
+        "objectSizes": {
+            "type": "number"
+        },
+        "version": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "spawns": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "x": {
+                        "type": "number"
+                    },
+                    "y": {
+                        "type": "number"
+                    }
+                },
+                "required": [
+                    "x",
+                    "y"
+                ],
+                "additionalProperties": false
+            }
+        },
+        "spaces": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "spaceId": {
+                        "type": "string"
+                    },
+                    "x": {
+                        "type": "number"
+                    },
+                    "y": {
+                        "type": "number"
+                    },
+                    "colored": {
+                        "type": "boolean"
+                    }
+                }
+            }
+        },
+        "assets": {
+            "type": "array",
+            "items": {}
+        },
+        "announcer": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "x": {
+                        "type": "number"
+                    },
+                    "y": {
+                        "type": "number"
+                    }
+                },
+                "required": [
+                    "x",
+                    "y"
+                ],
+                "additionalProperties": false
+            }
+        },
+        "dimensions": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+                "type": "number"
+            }
+        },
+        "objects": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "_name": {
+                        "type": "string"
+                    },
+                    "width": {
+                        "type": "number"
+                    },
+                    "height": {
+                        "type": "number"
+                    },
+                    "scale": {
+                        "type": "number"
+                    },
+                    "x": {
+                        "type": "number"
+                    },
+                    "y": {
+                        "type": "number"
+                    },
+                    "offsetX": {
+                        "type": "number"
+                    },
+                    "offsetY": {
+                        "type": "number"
+                    },
+                    "normal": {
+                        "type": "string"
+                    },
+                    "highlighted": {
+                        "type": "string"
+                    },
+                    "color": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "number"
+                    },
+                    "_tags": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "properties": {
+                        "type": "object",
+                        "properties": {
+                            "url": {
+                                "type": "string"
+                            },
+                            "deterministicUrlPrefix": {
+                                "type": "string"
+                            },
+                            "loading": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "orientation": {
+                        "type": "number"
+                    },
+                    "templateId": {
+                        "type": "string"
+                    },
+                    "distThreshold": {
+                        "type": "number"
+                    },
+                    "objectStartTime": {
+                        "type": "object",
+                        "properties": {
+                            "_nanoseconds":{
+                                "type": "number"
+                            },
+                            "_seconds": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "objectExpireTime": {
+                        "type": "object",
+                        "properties": {
+                            "_nanoseconds":{
+                                "type": "number"
+                            },
+                            "_seconds":{
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "previewMessage":{
+                        "type":"string"
+                    }
+                },
+                "required": [
+                    "id",
+                    "_name",
+                    "width",
+                    "height",
+                    "scale",
+                    "x",
+                    "y",
+                    "normal",
+                    "highlighted",
+                    "color",
+                    "type",
+                    "orientation",
+                    "templateId"
+                ],
+                "additionalProperties": false
+            }
+        },
+        "portals": {
+            "type": "array",
+            "items": {
+                "definitions": {
+                    "targetMap": {
+                        "type": "object",
+                        "title": "Target Map",
+                        "properties": {
+                            "targetX": {
+                                "type": "number"
+                            },
+                            "targetY": {
+                                "type": "number"
+                            },
+                            "targetMap": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "targetX",
+                            "targetY",
+                            "targetMap"
+                        ]
+                    },
+                    "url": {
+                        "type": "object",
+                        "title": "Target Url",
+                        "properties": {
+                            "targetUrl": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "targetUrl"
+                        ]
+                    }
+                },
+                "type": "object",
+                "properties": {
+                    "x": {
+                        "type": "number"
+                    },
+                    "y": {
+                        "type": "number"
+                    },
+                    "targetMapOrUrl": {
+                        "oneOf": [
+                            {
+                                "$ref": "#/properties/portals/items/definitions/targetMap"
+                            },
+                            {
+                                "$ref": "#/properties/portals/items/definitions/url"
+                            }
+                        ]
+                    }
+                }
+            },
+            "required": [
+                "x",
+                "y"
+            ],
+            "additionalProperties": false
+        }
+    },
+    "required": [
+        "id",
+        "useDrawnBG",
+        "backgroundImagePath",
+        "foregroundImagePath",
+        "collisions",
+        "spawns",
+        "spaces",
+        "assets",
+        "announcer",
+        "dimensions",
+        "objects",
+        "portals"
+    ],
+    "additionalProperties": false
+}

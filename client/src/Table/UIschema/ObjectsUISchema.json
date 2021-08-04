@@ -1,0 +1,109 @@
+{
+    "type": "VerticalLayout",
+    "elements": [
+        {
+            "type": "Group",
+            "label": "Objects",
+            "elements": [
+                {
+                    "type": "Control",
+                    "scope": "#/properties/objects",
+                    "options": {
+                        "elementLabelProp": "_name",
+                        "detail": {
+                            "type": "VerticalLayout",
+                            "elements": [
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/_name"
+                                },
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/previewMessage"
+                                },
+                                {
+                                    "type": "HorizontalLayout",
+                                    "elements": [
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/x"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/y"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/distThreshold"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/width"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/height"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/scale"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "HorizontalLayout",
+                                    "elements": [
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/color"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/orientation"
+                                        },
+                                        {
+                                            "type": "Control",
+                                            "scope": "#/properties/type"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/normal"
+                                },
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/highlighted"
+                                },
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/properties"
+                                },
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/objectStartTime"
+                                },
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/objectExpireTime"
+                                },
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/_tags"
+                                },
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/templateId"
+                                },
+                                {
+                                    "type": "Control",
+                                    "scope": "#/properties/id"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
