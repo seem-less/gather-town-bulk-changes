@@ -156,6 +156,24 @@
                             },
                             "loading": {
                                 "type": "string"
+                            },
+                            "video": {
+                                "type": "string"
+                            },
+                            "startTime": {
+                                "title": "Synchronized start time",
+                                "type": "object",
+                                "properties": {
+                                    "_nanoseconds": {
+                                        "type": "number"
+                                    },
+                                    "_seconds": {
+                                        "type": "number"
+                                    },
+                                    "_timezone": {
+                                        "type": "string"
+                                    }
+                                }
                             }
                         }
                     },
@@ -171,7 +189,7 @@
                     "objectStartTime": {
                         "type": "object",
                         "properties": {
-                            "_nanoseconds":{
+                            "_nanoseconds": {
                                 "type": "number"
                             },
                             "_seconds": {
@@ -182,16 +200,16 @@
                     "objectExpireTime": {
                         "type": "object",
                         "properties": {
-                            "_nanoseconds":{
+                            "_nanoseconds": {
                                 "type": "number"
                             },
-                            "_seconds":{
+                            "_seconds": {
                                 "type": "number"
                             }
                         }
                     },
-                    "previewMessage":{
-                        "type":"string"
+                    "previewMessage": {
+                        "type": "string"
                     }
                 },
                 "required": [

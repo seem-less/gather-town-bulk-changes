@@ -66,7 +66,15 @@ interface MapObject {
 interface Properties {
   url: string
   deterministicUrlPrefix?: string
-  loading?: string
+  loading?: string,
+  startTime?: StartTime
+  video?: string
+}
+
+interface StartTime {
+  _nanoseconds: number,
+  _seconds: number,
+  _timezone: string
 }
 
 interface Spawn {
