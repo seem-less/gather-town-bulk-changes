@@ -1,5 +1,3 @@
-import { UrlWithStringQuery } from "url";
-
 export interface MapData {
   id: string
   useDrawnBG: boolean
